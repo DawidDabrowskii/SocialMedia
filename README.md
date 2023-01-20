@@ -1,2 +1,2 @@
 # SocialMedia
-Social Media Project
+Instagram clone project using HTML/CSS
