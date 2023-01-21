@@ -266,7 +266,8 @@ body {
   font-size: 14px;
 }
 
-.comment-btn {
+.comment-btn,
+.action-btn {
   width: 70px;
   height: 100%;
   background: none;
@@ -337,6 +338,19 @@ body {
   font-size: 12px;
   font-weight: 500;
   margin-top: 5px;
+}
+
+.action-btn {
+  opacity: 1;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.suggestion-text{
+  font-size: 14px;
+  color: var(--userBorder);
+  font-weight: 700;
+  margin: 20px 0;
 }
 
 
