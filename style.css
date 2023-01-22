@@ -49,7 +49,9 @@ body {
 .brand-img {
   height: 100%;
   margin-top: 5px;
+  cursor: pointer;
 }
+
 
 .search-box {
   position: absolute;
@@ -79,6 +81,9 @@ body {
   cursor: pointer;
   margin: 0 10px;
   display: inline-block;
+}
+.icon:hover, .icon:focus {
+  filter:brightness(200%);
 }
 
 .user-profile {
@@ -155,13 +160,23 @@ body {
   border: 2px solid var(--border);
 }
 
+.profile-pic img:hover,
+.profile-pic img:focus {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .username {
   width: 100%;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
   font-size: 12px;
   margin-top: 5px;
   color: var(--userBorder);
+}
+.username:hover, .username:focus{
+  filter: opacity(0.5);
+  cursor: pointer;
 }
 
 .post {
@@ -178,7 +193,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
 .info .username {
@@ -192,6 +207,10 @@ body {
 .info .options {
   height: 10px;
   cursor: pointer;
+}
+
+.options:hover{
+  opacity: 0.5;
 }
 
 .info .user {
@@ -212,6 +231,14 @@ body {
 
 .info .profile-pic img {
   border: none;
+}
+
+ul {
+  font-size: 0.7rem;
+  color: hsla(0, 0%, 51%, 0.8);
+  margin-left: 2vw;
+  margin-top: 0.3vh;
+  font-weight: 600;
 }
 
 .post-image {
@@ -278,6 +305,11 @@ body {
   color: rgb(0, 162, 255);
   opacity: 0.5;
 }
+.comment-btn:hover,
+.comment-btn:focus {
+  filter: brightness(50%);
+  cursor: pointer;
+}
 
 .reaction-wrapper {
   width: 100%;
@@ -295,6 +327,7 @@ body {
 
 .reaction-wrapper .icon.save {
   margin-left: auto;
+  margin-right: 0;
 }
 
 .right-col {
@@ -309,7 +342,7 @@ body {
   margin-bottom: 10px;
 }
 
-.profile-card .profile-pic{
+.profile-card .profile-pic {
   flex: 0 0 auto;
   padding: 0;
   background: none;
@@ -318,23 +351,23 @@ body {
   margin-right: 10px;
 }
 
-.profile-card:first-child .profile-pic{
+.profile-card:first-child .profile-pic {
   width: 70px;
   height: 70px;
 }
 
-.profile-card .profile-pic img{
+.profile-card .profile-pic img {
   border: none;
 }
 
 .profile-card .username {
   font-weight: 500;
   font-size: 14px;
-  color:#000;
+  color: #000;
 }
 
-.sub-text{
-  color:var(--userBorder);
+.sub-text {
+  color: var(--userBorder);
   font-size: 12px;
   font-weight: 500;
   margin-top: 5px;
@@ -345,12 +378,15 @@ body {
   font-weight: 700;
   font-size: 12px;
 }
+.action-btn:hover,
+.action-btn:focus {
+  cursor: pointer;
+  filter: brightness(150%);
+}
 
-.suggestion-text{
+.suggestion-text {
   font-size: 14px;
   color: var(--userBorder);
   font-weight: 700;
   margin: 20px 0;
 }
-
-
